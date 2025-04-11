@@ -7,12 +7,23 @@
     <style>
         body {
             height: 100vh;
+            /*
             background-color: black;
-            background-image: url('imagens/wallpaper002.jpg');
+            background-image: url('imagens/Vista-de-planeta-verde.png');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            */
 
+            /* Shorthand - background  Lembrando que o Size na shorthand não funciona nos navegadores (Não sei o porque) 
+                color > image > position > repeat > [size] > attachment
+
+                color > image > position > repeat > attachment
+            */
+
+            background: black url('imagens/Vista-de-planeta-verde.png') center center no-repeat fixed;
+            background-size: cover;
         }
 
         main {
@@ -28,6 +39,12 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eum, natus minima qui perspiciatis nihil saepe error recusandae architecto numquam repudiandae omnis consectetur tempora nostrum quisquam! Pariatur alias explicabo et? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tenetur modi sapiente quo cupiditate voluptatem deleniti facere aliquam laborum nesciunt, error voluptates fugit sequi nulla dolor? Sapiente culpa reprehenderit quia? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque molestiae necessitatibus impedit sint, iusto autem cumque eos aliquam nemo adipisci doloremque exercitationem amet odio eligendi minima quas perferendis, modi sapiente?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eum, natus minima qui perspiciatis nihil saepe error recusandae architecto numquam repudiandae omnis consectetur tempora nostrum quisquam! Pariatur alias explicabo et? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tenetur modi sapiente quo cupiditate voluptatem deleniti facere aliquam laborum nesciunt, error voluptates fugit sequi nulla dolor? Sapiente culpa reprehenderit quia? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque molestiae necessitatibus impedit sint, iusto autem cumque eos aliquam nemo adipisci doloremque exercitationem amet odio eligendi minima quas perferendis, modi sapiente?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eum, natus minima qui perspiciatis nihil saepe error recusandae architecto numquam repudiandae omnis consectetur tempora nostrum quisquam! Pariatur alias explicabo et? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tenetur modi sapiente quo cupiditate voluptatem deleniti facere aliquam laborum nesciunt, error voluptates fugit sequi nulla dolor? Sapiente culpa reprehenderit quia? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque molestiae necessitatibus impedit sint, iusto autem cumque eos aliquam nemo adipisci doloremque exercitationem amet odio eligendi minima quas perferendis, modi sapiente?
+        </p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eum, natus minima qui perspiciatis nihil saepe error recusandae architecto numquam repudiandae omnis consectetur tempora nostrum quisquam! Pariatur alias explicabo et? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tenetur modi sapiente quo cupiditate voluptatem deleniti facere aliquam laborum nesciunt, error voluptates fugit sequi nulla dolor? Sapiente culpa reprehenderit quia? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque molestiae necessitatibus impedit sint, iusto autem cumque eos aliquam nemo adipisci doloremque exercitationem amet odio eligendi minima quas perferendis, modi sapiente?
         </p>
     </main>
