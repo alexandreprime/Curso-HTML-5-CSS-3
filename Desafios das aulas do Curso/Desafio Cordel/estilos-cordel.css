@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+:root {
+    --cor-clara: white;
+    --cor-escura: black;
+
+    --fonte-padrao: Arial, Helvetica, Verdana, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    padding: 10vh;
+    text-align: center;
+}
+
+header > h1 {
+    font: normal 900 8.5em var(--fonte-padrao), sans-serif;
+    padding: 20px;
+}
+
+header > p {
+
+}
