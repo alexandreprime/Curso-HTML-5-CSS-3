@@ -1,33 +1,84 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Passion-one';
+    src: url('fontes/Passion_One/PassionOne-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Sriracha';
+    src: url('fontes/Sriracha/Sriracha-Regular.ttf');
+}
+
 :root {
     --cor-clara: white;
     --cor-escura: black;
 
-    --fonte-padrao: Arial, Helvetica, Verdana, sans-serif;
+    --fonte-1: Arial, Helvetica, Verdana, sans-serif;
+    --fonte-2: 'Passion-one', cursive;
+    --fonte-3: 'Sriracha', cursive;
 }
 
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
-body {
-    font-family: var(--fonte-padrao);
+html, body {
+    font-family: var(--fonte-1);
 }
 
 header {
-    font-family: var(--fonte-padrao);
     background-color: var(--cor-escura);
     color: var(--cor-clara);
-    padding: 10vh;
     text-align: center;
 }
 
 header > h1 {
-    font: normal 900 8.5em var(--fonte-padrao), sans-serif;
-    padding: 20px;
+    font: normal normal 12em var(--fonte-2), sans-serif;
+    padding: 10px 0px 0px 0px;
 }
 
 header > p {
+    font-size: 1em;
+}
 
+a#link-milton {
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--cor-clara);
+}
+
+a#link-milton:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: var(--cor-clara);
+    padding: 1em 0em 1em 0em;
+}
+
+.paragrafo-padrao {
+    max-width: 700px;
+    max-height: 850px;
+    padding: 50px;
+    font: normal normal 4em var(--fonte-3);
+    line-height: 130px;
+}
+
+section {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+section > p {
+    color: var(--cor-clara);
+}
+
+section:nth-of-type(1) {
+    background-image: url('imagens/background001.jpg');
+    height: 1280px;
 }
