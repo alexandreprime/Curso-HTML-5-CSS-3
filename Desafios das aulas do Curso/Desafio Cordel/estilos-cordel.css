@@ -23,6 +23,7 @@
     margin: 0px;
     padding: 0px;
     font-size: 1em;
+    box-sizing: border-box;
 }
 html, body {
     font-family: var(--fonte-1);
@@ -58,27 +59,38 @@ main {
     padding: 1em 0em 1em 0em;
 }
 
-.paragrafo-padrao {
-    max-width: 700px;
-    max-height: 850px;
-    padding: 50px;
-    font: normal normal 4em var(--fonte-3);
-    line-height: 130px;
-}
-
 section {
-    width: 100%;
-    height: 300px;
-    background-position: center;
-    background-repeat: no-repeat;
-    
+    font: normal normal 4em var(--fonte-3);
+    line-height: 200px;
 }
 
-section > p {
+.p-geral {
     color: var(--cor-clara);
 }
 
-section:nth-of-type(1) {
-    background-image: url('imagens/background001.jpg');
-    height: 1280px;
+section#secao-1:nth-of-type(1) {
+    background-image: url(imagens/background001.jpg);
+    width: 100%;
+    height: 600px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#secao-2:nth-of-type(2) {
+    background-image: url(imagens/background002.jpg);
+    width: 100%;
+    height: 600px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section > p {
+    max-width: 35%;
+    padding-left: 40px;
 }
