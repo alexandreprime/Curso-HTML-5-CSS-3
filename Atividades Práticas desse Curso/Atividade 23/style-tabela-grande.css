@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+:root {
+    --cor-cabecalho-tabela: rgb(48, 48, 48);
+    --cor-forte-zebrado: lightgray;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+    position: relative;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgb(187, 185, 185);
+}
+
+thead, tfoot {
+    background-color: var(--cor-cabecalho-tabela);
+    color: white;
+}
+
+thead > tr > th {
+    position: sticky;
+    top: -1px;
+    background-color: var(--cor-cabecalho-tabela);
+}
+
+tbody > tr:nth-child(odd) {     /* odd(Ímpar) = 2n-1  linhas ímpares terão a cor aplicada*/
+    background-color: white;
+    
+}
+
+tbody > tr:nth-child(even) {    /* even(Par) = 2n   linhas pares terão a cor aplicada*/
+    background-color: var(--cor-forte-zebrado);
+}
+
+td.num {
+    text-align: right;
+}
+
+td.ajuste, th.ajuste {
+    width: 90px;
+}
