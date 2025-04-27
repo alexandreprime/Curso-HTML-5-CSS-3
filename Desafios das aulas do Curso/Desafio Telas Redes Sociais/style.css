@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body {
+    background-image: url('imagens/fundo-madeira.jpg');
+}
+
+section#secao-externa {
+    background-size: 100% 100%;
+
+    position: relative;
+    height: 96vh;
+    padding: 10px;
+}
+
+iframe#caixa {
+    position: absolute;
+    background-size: 100% 100%;
+    width: 400px;
+    height: 800px;
+    border: 0px;
+    align-items: center;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
